@@ -1,2 +1,8 @@
 # compass
-Web Compass
+
+
+Compass browser application
+```
+npm install
+npm start
+```
