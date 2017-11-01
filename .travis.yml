@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "6.9"
+install:
+  - npm install
+cache:
+  directories:
+  - node_modules
+# before_script:
+script:
+  - npm run lint
+  - npm test
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: src
+  on:
+    branch: master
+notifications:
+    slack: 
+      on_pull_requests: true
+      rooms:
+        - atomspaceodua:52cC8ZdHnE2S96Hml0Lavn12
+      on_success: change # default: always
+      on_failure: change # default: always
