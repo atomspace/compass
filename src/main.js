@@ -26,3 +26,7 @@ function findNaD(degrees){
     }
 
 }
+
+var readyName = findNaD(alphaCountMain)
+
+$(".direction").html(readyName);
