@@ -20,13 +20,13 @@ body {
     margin: auto;
     top: 6px;
     border-radius: 124px;
-    /* transform: rotateZ(90deg); */
+    /* transform: rotateZ(67deg); */
     /* -webkit-transition: .5s duration timing-function delay;
     -moz-transition: .5s duration timing-function delay;
     transition: .5s duration timing-function delay; */
 }
 
-.center {
+.spinCenter {
     position: relative;
     width: 130px;
     height: 130px;
@@ -51,12 +51,33 @@ body {
 }
 
 .north, .east, .west, .south {
+    position: relative;
     color: #fff;
     font-family: RobotoSlab-Thin; 
+    font-size: 24px;
 }
 
 .north {
-    font-family: RobotoSlab-Regular; 
+    font-family: RobotoSlab-Regular;
+    left: 115px;
+    top: -115px; 
+}
+
+.east {
+    left: -95px;
+    top: -235px; 
+    transform: rotateZ(-90deg)
+}
+
+.west {
+    left: 95px;
+    top: 25px; 
+    transform: rotateZ(90deg)
+}
+
+.south {
+    left: 115px;
+    top: 40px;
 }
 
 @font-face {
@@ -74,4 +95,46 @@ body {
 @font-face {
     font-family: RobotoSlab-Bold; 
     src: url(fonts/RobotoSlab-Bold.ttf);  
+}
+
+.pointer {
+    position: relative;
+    margin: auto;
+    width: 95px;
+    height: 95px;
+    background: #BE4D45;
+    margin-top: -162px;
+    transform: rotateZ(45deg);
+    border-radius: 100px;
+    border-top-left-radius: 0;
+}
+
+.pointerCenter {
+    position: relative;
+    background: #AB4540;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    bottom: -7.5px;
+    left: 7.5px;
+    box-shadow:inset 0px 1px 2px rgba(0,0,0,0.5);
+    transform: rotateZ(-45deg);
+}
+
+.direction, .degree {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.direction {
+    padding-top: 10px;
+    font-family: RobotoSlab-Regular;  
+}
+
+.degree {
+    margin-top: -4px;
+    margin-left: 8px;
+    font-family: RobotoSlab-Thin; 
 }
