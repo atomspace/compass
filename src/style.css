@@ -1,0 +1,51 @@
+body {
+    background: #20292E;
+} 
+
+.compass {
+    position: relative;
+    margin: auto;
+    margin-top: 100px;;
+    background: #C74F49;
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+}
+
+.spinPart {
+    position: relative;
+    width: 248px;
+    height: 248px;
+    background: #2A3539;
+    margin: auto;
+    top: 6px;
+    border-radius: 124px;
+    /* transform: rotateZ(90deg); */
+    /* -webkit-transition: .5s duration timing-function delay;
+    -moz-transition: .5s duration timing-function delay;
+    transition: .5s duration timing-function delay; */
+}
+
+.center {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background: #20292E;
+    margin: auto;
+    top: 60px;
+    border-radius: 65px;
+}
+
+.spinPointer {
+    position: relative;
+    border-radius: 15px;
+}
+
+.spinPointer::after {
+    content: ''; 
+    position: absolute; 
+    left: 110px;
+    top: -130px;
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #C74F49; /* Добавляем треугольник */
+   }
