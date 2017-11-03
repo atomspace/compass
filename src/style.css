@@ -20,10 +20,20 @@ body {
     margin: auto;
     top: 6px;
     border-radius: 124px;
-    /* transform: rotateZ(67deg); */
-    /* -webkit-transition: .5s duration timing-function delay;
-    -moz-transition: .5s duration timing-function delay;
-    transition: .5s duration timing-function delay; */
+    background-image: radial-gradient(circle at center, #708090 8px, transparent 1px), 
+        radial-gradient(circle at center 55%, rgba(0,0,0,0.9) 1px, transparent 5px), 
+        radial-gradient(circle at center, #2A3539 54%, transparent 50%, transparent 55.5%, #2A3539 55%), 
+        linear-gradient(15deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(30deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(45deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(60deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(75deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(-15deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(-30deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(-45deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(-60deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
+        linear-gradient(-75deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%);
+        /* transform: rotateZ(35deg); */
 }
 
 .spinCenter {
@@ -46,8 +56,8 @@ body {
     position: absolute; 
     left: 110px;
     top: -130px;
-    border: 15px solid transparent; /* Прозрачные границы */
-    border-top: 15px solid #C74F49; /* Добавляем треугольник */
+    border: 15px solid transparent; 
+    border-top: 15px solid #C74F49; 
 }
 
 .north, .east, .west, .south {
