@@ -33,7 +33,6 @@ body {
         linear-gradient(-45deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
         linear-gradient(-60deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%),
         linear-gradient(-75deg, transparent 50.2%, #d3d3d3 50%, #d3d3d3 51%, transparent 51%);
-        /* transform: rotateZ(35deg); */
 }
 
 .spinCenter {
@@ -55,7 +54,7 @@ body {
     content: ''; 
     position: absolute; 
     left: 110px;
-    top: -130px;
+    top: -135px;
     border: 15px solid transparent; 
     border-top: 15px solid #C74F49; 
 }

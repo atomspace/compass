@@ -1,12 +1,13 @@
 var alphaCountMain = $(window).on('deviceorientation', function(jqevent){
     var event = jqevent.originalEvent;
     var alphaCount = (event.alpha);
+    console.log(alphaCount);
     return alphaCount;
 })
 
 function findNaD(degrees){
     switch(degrees){
-        case (degrees >= 338 && degrees <= 22):
+        case (degrees >= 338 && degrees <= 360 || degrees <= 22 && degrees >= 0):
             return N;
         case (degrees >= 23 && degrees <= 67):
             return NE;
