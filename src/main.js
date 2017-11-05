@@ -1,6 +1,10 @@
 var alphaCountMain = $(window).on('deviceorientation', function(jqevent){
     var event = jqevent.originalEvent;
     var alphaCount = (event.alpha);
+    // var spinPart = $('.spinPart');
+    // spinPart.css('transform','rotate('+alphaCount+'deg)');
+    // var degreeValue = $('.degreeValue');
+    // degreeValue.html( Math.round(alphaCount) + '°');
     console.log(alphaCount);
     return alphaCount;
 })
@@ -28,6 +32,9 @@ function findNaD(degrees){
 
 }
 
+
+
 var readyName = findNaD(alphaCountMain)
 
 $(".direction").html(readyName);
+
