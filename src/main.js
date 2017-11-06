@@ -1,13 +1,22 @@
-var alphaCountMain = $(window).on('deviceorientation', function(jqevent){
-    var event = jqevent.originalEvent;
-    var alphaCount = (event.alpha);
-    // var spinPart = $('.spinPart');
-    // spinPart.css('transform','rotate('+alphaCount+'deg)');
-    // var degreeValue = $('.degreeValue');
-    // degreeValue.html( Math.round(alphaCount) + '°');
-    console.log(alphaCount);
-    return alphaCount;
-})
+// var alphaCountMain = $(window).on('deviceorientation', function(jqevent){
+//     var event = jqevent.originalEvent;
+//     var alphaCount = (event.alpha);
+//     // var spinPart = $('.spinPart');
+//     // spinPart.css('transform','rotate('+alphaCount+'deg)');
+//     // var degreeValue = $('.degreeValue');
+//     // degreeValue.html( Math.round(alphaCount) + '°');
+//     console.log(alphaCount);
+//     return alphaCount;
+// })
+
+function handleDeviceOrientation(event){
+    var heading = getCompassHeading(event);
+    var direction = getDirection(heading);
+    setDirection(direction);
+    setAngle(heading);
+    rotateCompass(heading);
+}
+
 
 function findNaD(degrees){
     switch(degrees){
@@ -38,3 +47,4 @@ var readyName = findNaD(alphaCountMain)
 
 $(".direction").html(readyName);
 
+$(window).on('deviceorientation', handleDeviceOrientation)
