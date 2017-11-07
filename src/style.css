@@ -3,9 +3,12 @@ body {
 } 
 
 .compass {
-    position: relative;
+    position: absolute;
     margin: auto;
-    margin-top: 100px;;
+    margin-top: -130px;
+    margin-left: -130px;
+    top: 50%;
+    left: 50%;
     background: #C74F49;
     width: 260px;
     height: 260px;
@@ -75,19 +78,19 @@ body {
 .east {
     left: -95px;
     top: -235px; 
-    transform: rotateZ(-90deg)
+    transform: rotateZ(-90deg);
 }
 
 .west {
     left: 95px;
     top: 25px; 
-    transform: rotateZ(90deg)
+    transform: rotateZ(90deg);
 }
 
 .south {
     left: -115px;
     top: 40px;
-    transform: rotateZ(180deg)
+    transform: rotateZ(180deg);
 }
 
 @font-face {
