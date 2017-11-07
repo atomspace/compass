@@ -69,7 +69,7 @@ body {
 .north {
     font-family: RobotoSlab-Regular;
     left: 115px;
-    top: -115px; 
+    top: -117px; 
 }
 
 .east {
@@ -85,8 +85,9 @@ body {
 }
 
 .south {
-    left: 115px;
+    left: -115px;
     top: 40px;
+    transform: rotateZ(180deg)
 }
 
 @font-face {
