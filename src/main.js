@@ -87,25 +87,25 @@ function findNaD(degrees){
     if (degrees >= 338 && degrees <= 360 || degrees <= 22 && degrees >= 0 || degrees >= -338 && degrees <= -360 || degrees <= -22 && degrees >= 0)
         return "N";            
     else if (degrees >= 23 && degrees <= 67 || degrees >= -23 && degrees <= -67){
-        return "NW";
+        return "NE";
     }
     else if (degrees >= 68 && degrees <= 112 || degrees >= -68 && degrees <= -112){
-        return "W";
+        return "E";
     }
     else if (degrees >= 113 && degrees <= 157 || degrees >= -113 && degrees <= -157){
-        return "WS";
+        return "ES";
     }
     else if (degrees >= 158 && degrees <= 202 || degrees >= -158 && degrees <= -202){
         return "S";
     }
     else if (degrees >= 203 && degrees <= 247 || degrees >= -203 && degrees <= -247){
-        return "SE";
+        return "SW";
     }
     else if (degrees >= 248 && degrees <= 293 || degrees >= -248 && degrees <= -293){
-        return "E";
+        return "W";
     }
     else if (degrees >= 294 && degrees <= 337 || degrees >= -294 && degrees <= -337){
-        return "EN";
+        return "WN";
     }   
     
 
