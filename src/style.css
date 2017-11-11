@@ -77,13 +77,13 @@ body {
 
 .east {
     left: -95px;
-    top: -235px; 
+    top: -233px; 
     transform: rotateZ(-90deg);
 }
 
 .west {
     left: 95px;
-    top: 25px; 
+    top: 28px; 
     transform: rotateZ(90deg);
 }
 
