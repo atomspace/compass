@@ -17,37 +17,6 @@
 //     rotateCompass(heading);
 // }
 
-
-// function findNaD(degrees){
-//     switch(degrees){
-//         case (degrees >= 338 && degrees <= 360 || degrees <= 22 && degrees >= 0):
-//             return N;
-//         case (degrees >= 23 && degrees <= 67):
-//             return NE;
-//         case (degrees >= 68 && degrees <= 112):
-//             return E;
-//         case (degrees >= 113 && degrees <= 157):
-//             return ES;
-//         case (degrees >= 158 && degrees <= 202):
-//             return S;
-//         case (degrees >= 203 && degrees <= 247):
-//             return SW;
-//         case (degrees >= 248 && degrees <= 293):
-//             return W;
-//         case (degrees >= 294 && degrees <= 337):
-//             return WN;
-           
-//     }
-
-// }
-
-
-
-// var readyName = findNaD(alphaCountMain)
-
-// $(".direction").html(readyName);
-
-// $(window).on('deviceorientation', handleDeviceOrientation)
 $(window).on('deviceorientation', function(jqevent){
     var event = jqevent.originalEvent;
     var alphaCount = (event.alpha);
@@ -65,11 +34,6 @@ $(window).on('deviceorientation', function(jqevent){
 
     var degreeValue = $('.degreeValue');
     degreeValue.html( realDeg + '°');
-
-
-    // console.log(alphaCount);
-    // console.log(realName);
-    // console.log(realDeg);
 })
 
 function converter(deg){
@@ -79,8 +43,6 @@ function converter(deg){
     else if (deg > 0 && deg < 360 ){
         return (360 - Math.round(deg));
     }
-
-
 }
 
 function findNaD(degrees){
