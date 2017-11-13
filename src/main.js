@@ -54,7 +54,7 @@ $(window).on('deviceorientation', function(jqevent){
 
     var realDeg = converter(alphaCount)
     
-    var realName = findNaD(realDeg)
+    var realName = findName(realDeg)
 
 
     var spinPart = $('.spinPart');
@@ -83,7 +83,7 @@ function converter(deg){
 
 }
 
-function findNaD(degrees){
+function findName(degrees){
     if (degrees >= 338 && degrees <= 360 || degrees <= 22 && degrees >= 0 || degrees >= -338 && degrees <= -360 || degrees <= -22 && degrees >= 0)
         return "N";            
     else if (degrees >= 23 && degrees <= 67 || degrees >= -23 && degrees <= -67){
