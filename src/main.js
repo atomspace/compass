@@ -1,5 +1,5 @@
 // var alphaCountMain = $(window).on('deviceorientation', function(jqevent){
-//     var event = jqevent.originalEvent;
+//     var event = jsqevent.originalEvent;
 //     var alphaCount = (event.alpha);
 //     // var spinPart = $('.spinPart');
 //     // spinPart.css('transform','rotate('+alphaCount+'deg)');
@@ -12,8 +12,8 @@
 // function handleDeviceOrientation(event){
 //     var heading = getCompassHeading(event);
 //     var direction = getDirection(heading);
-//     setDirection(direction);
-//     setAngle(heading);
+//     setDirection(direction); - ready
+//     setAngle(heading); - ready
 //     rotateCompass(heading);
 // }
 
@@ -52,18 +52,19 @@ $(window).on('deviceorientation', function (jqevent) {
     var event = jqevent.originalEvent;
     var alphaCount = (event.alpha);
 
-    var realDeg = converter(alphaCount);
+    var realDeg = setAngle(alphaCount);
 
-    var realName = findName(realDeg);
+    var realName = setDirection(realDeg);
 
+    var degreeValue = $('.degreeValue');
+
+    var direction = $('.direction');
 
     var spinPart = $('.spinPart');
     spinPart.css('transform', 'rotate(' + alphaCount + 'deg)');
 
-    var direction = $('.direction');
     direction.html(realName);
 
-    var degreeValue = $('.degreeValue');
     degreeValue.html(realDeg + '°');
 
 
@@ -72,7 +73,7 @@ $(window).on('deviceorientation', function (jqevent) {
     // console.log(realDeg);
 });
 
-function converter(deg) {
+function setAngle(deg) {
     if (deg <= 0 && deg > -360) {
         return Math.abs(Math.round(deg));
     }
@@ -83,7 +84,7 @@ function converter(deg) {
 
 }
 
-function findName(degrees) {
+function setDirection(degrees) {
     if (degrees >= 338 && degrees <= 360 || degrees <= 22 && degrees >= 0 || degrees >= -338 && degrees <= -360 || degrees <= -22 && degrees >= 0) { return 'N'; }
     else if (degrees >= 23 && degrees <= 67 || degrees >= -23 && degrees <= -67) {
         return 'NE';
