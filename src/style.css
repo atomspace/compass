@@ -1,5 +1,29 @@
+@font-face {
+    font-weight: 100;
+    font-family: 'Roboto Slab'; 
+    src: 
+        local('Roboto Slab Thin'),
+        local('Roboto-Slab-Thin'),
+        url(fonts/RobotoSlab-Thin.woff2),
+        url(fonts/RobotoSlab-Thin.woff),
+        url(fonts/RobotoSlab-Thin.ttf);  
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'Roboto Slab'; 
+    src: url(fonts/RobotoSlab-Regular.ttf);  
+}
+
+@font-face {
+    font-weight: 200;
+    font-family: 'Roboto Slab'; 
+    src: url(fonts/RobotoSlab-Light.ttf);  
+}
+
 body {
     background: #20292E;
+    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
 
 .compass {
@@ -65,12 +89,12 @@ body {
 .north, .east, .west, .south {
     position: relative;
     color: #fff;
-    font-family: RobotoSlab-Thin; 
+    /* font-family: RobotoSlab-Thin;  */
     font-size: 24px;
 }
 
 .north {
-    font-family: RobotoSlab-Regular;
+    /* font-family: RobotoSlab-Regular; */
     left: 115px;
     top: -117px; 
 }
@@ -93,30 +117,13 @@ body {
     transform: rotateZ(180deg);
 }
 
-@font-face {
-    font-family: RobotoSlab-Thin; 
-    src: url(fonts/RobotoSlab-Thin.ttf);  
-}
-@font-face {
-    font-family: RobotoSlab-Regular; 
-    src: url(fonts/RobotoSlab-Regular.ttf);  
-}
-@font-face {
-    font-family: RobotoSlab-Light; 
-    src: url(fonts/RobotoSlab-Light.ttf);  
-}
-@font-face {
-    font-family: RobotoSlab-Bold; 
-    src: url(fonts/RobotoSlab-Bold.ttf);  
-}
-
 .pointer {
     position: relative;
     margin: auto;
-    width: 90px;
-    height: 90px;
+    width: 92px;
+    height: 92px;
     background: #BE4D45;
-    margin-top: -162px;
+    margin-top: -163px;
     transform: rotateZ(45deg);
     border-radius: 100px;
     border-top-left-radius: 0;
@@ -143,12 +150,12 @@ body {
 
 .direction {
     padding-top: 10px;
-    font-family: RobotoSlab-Regular;  
+    /* font-family: RobotoSlab-Regular;   */
 }
 
 .degreeValue {
     top: -8px;
     margin-left: 8px;
     font-size: 22px;
-    font-family: RobotoSlab-Thin; 
+    /* font-family: RobotoSlab-Thin;  */
 }
