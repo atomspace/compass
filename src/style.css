@@ -113,8 +113,8 @@ body {
 .pointer {
     position: relative;
     margin: auto;
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
     background: #BE4D45;
     margin-top: -162px;
     transform: rotateZ(45deg);
@@ -125,8 +125,8 @@ body {
 .pointerCenter {
     position: relative;
     background: #AB4540;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 100px;
     bottom: -7.5px;
     left: 7.5px;
