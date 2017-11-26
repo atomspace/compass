@@ -12,17 +12,23 @@
 @font-face {
     font-weight: normal;
     font-family: 'Roboto Slab'; 
-    src: url(fonts/RobotoSlab-Regular.ttf);  
+    src: 
+        local('Roboto Slab Regular'),
+        local('Roboto-Slab-Regular'),
+        url(fonts/RobotoSlab-Regular.woff2),
+        url(fonts/RobotoSlab-Regular.woff),
+        url(fonts/RobotoSlab-Regular.ttf); 
 }
 
-@font-face {
+/* @font-face {
     font-weight: 200;
     font-family: 'Roboto Slab'; 
     src: url(fonts/RobotoSlab-Light.ttf);  
-}
+} */
 
 body {
     background: #20292E;
+    font-weight: normal;
     font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
 
@@ -89,12 +95,12 @@ body {
 .north, .east, .west, .south {
     position: relative;
     color: #fff;
-    /* font-family: RobotoSlab-Thin;  */
+    font-weight: 100;
     font-size: 24px;
 }
 
 .north {
-    /* font-family: RobotoSlab-Regular; */
+    font-weight: normal;
     left: 115px;
     top: -117px; 
 }
@@ -150,12 +156,11 @@ body {
 
 .direction {
     padding-top: 10px;
-    /* font-family: RobotoSlab-Regular;   */
 }
 
 .degreeValue {
     top: -8px;
     margin-left: 8px;
     font-size: 22px;
-    /* font-family: RobotoSlab-Thin;  */
+    font-weight: 100;
 }
